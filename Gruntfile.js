@@ -40,7 +40,7 @@ module.exports = function(grunt) {
           tasks: ['compass']
         },
         twig: {
-          files: ['app/Resources/views/*.html.twig', 'src/Pbmc/AppBundle/Resources/views/**/*.html.twig'],
+          files: ['app/Resources/views/*.html.twig', 'src/Btn/AppBundle/Resources/views/**/*.html.twig', 'src/Btn/ControlBundle/Resources/views/**/*.html.twig'],
           options: {
             livereload: true
           }
