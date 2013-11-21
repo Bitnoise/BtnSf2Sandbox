@@ -1,0 +1,22 @@
+parameters:
+    #db
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: btn
+    database_user: root
+    database_password: root
+
+    #mail
+    mailer_transport:  gmail
+    mailer_host:       ~
+    mailer_port:       false
+    mailer_user:       dev.bitnoi.se@gmail.com
+    mailer_password:   b1tn0ise
+
+    #locale and secret
+    locale:            pl
+    secret:            MzgxYTNiNzMxNjI0ZmExZjliMDI5ZmFlOTQ3NmJiZjU
+
+    #root
+    web_root: %kernel.root_dir%/../web/

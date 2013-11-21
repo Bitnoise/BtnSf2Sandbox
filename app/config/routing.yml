@@ -1,0 +1,10 @@
+btn_control:
+    resource: "@BtnControlBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+btn_app:
+    resource: "@BtnAppBundle/Controller/"
+    type:     annotation
+    prefix:   /
+

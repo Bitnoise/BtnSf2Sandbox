@@ -11,3 +11,24 @@ web/bundles/*
 # Configuration files
 app/config/parameters.ini
 app/config/parameters.yml
+
+# Sass & Mac
+.sass-cache
+.DS_Store
+
+# Frontend vendors
+web/vendor
+
+# Productuion assets
+web/js/*.js
+web/css/*
+web/UI/app/css/*
+
+# Nodejs Grunt modules
+node_modules
+
+# phpUnit code coverate
+cov/*
+
+# Capistrano
+backups/

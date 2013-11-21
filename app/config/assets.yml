@@ -1,0 +1,21 @@
+assetic:
+    assets:
+        default_css:
+            inputs:
+                - UI/app/css/screen.css
+            output: css/screen.css
+        base_js:
+            inputs:
+                - vendor/jquery/jquery.min.js
+                - UI/app/js/app.js
+            output:
+                'js/all.js'
+        ie_js:
+            inputs:
+                - vendor/html5shiv/dist/html5shiv.js
+                - vendor/respond/respond.src.js
+                - vendor/selectivizr/selectivizr.js
+            output:
+                'js/ie.js'
+            output:
+                'js/mediauploader.js'

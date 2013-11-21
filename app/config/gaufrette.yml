@@ -1,0 +1,9 @@
+# Gaufrette Configuration
+knp_gaufrette:
+    adapters:
+        #avatar_pet:
+            #local:
+               # directory: %web_root%uploads/avatar/pet
+    filesystems:
+        #avatar_pet:
+        #    adapter: avatar_pet

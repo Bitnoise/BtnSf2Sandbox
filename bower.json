@@ -1,0 +1,10 @@
+{
+  "name": "btnsf2sandbox",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "<2.0.0",
+    "html5shiv": "~3.7.0",
+    "selectivizr": "https://github.com/keithclark/selectivizr.git",
+    "respond": "https://github.com/scottjehl/Respond.git"
+  }
+}
