@@ -12,7 +12,7 @@ parameters:
     mailer_host:       ~
     mailer_port:       false
     mailer_user:       dev.bitnoi.se@gmail.com
-    mailer_password:   ******
+    mailer_password:   ~
 
     #locale and secret
     locale:            pl
