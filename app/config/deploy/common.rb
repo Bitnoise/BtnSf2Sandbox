@@ -1,5 +1,6 @@
 #Common deployment flow
 
+set :php_bin,     "php"
 set :repository,  "git@github.com:Bitnoise/BtnSf2Sandbox.git"
 set :scm,         :git
 set :use_composer, true
@@ -32,7 +33,7 @@ after "deploy" do
   #run "cd #{deploy_to}/current && php app/console assetic:dump --env=prod --no-debug"
 
   # db update
-  run "cd #{deploy_to}/current && php app/console doctrine:schema:update --force"
+  run "cd #{deploy_to}/current && #{php_bin} app/console doctrine:schema:update --force"
 
   # Make app.php the front controller (and not app_dev.php)
   # in order not to have to change the htaccess manualyy everytime
