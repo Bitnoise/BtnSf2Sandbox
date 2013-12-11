@@ -128,6 +128,19 @@ module.exports = function(grunt) {
         },
     },
 
+    groundskeeper: {
+        prod: {
+            expand: true,
+            cwd: 'web/js',
+            src: ['*.js'],
+            dest: 'web/js',
+            ext: '.js'
+        },
+        options: {
+            replace: '"cl"'
+        }
+    },
+
     clean : {
         assets : {
             src : [ "web/js/*.js", "web/css/*.css"],
@@ -143,6 +156,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-groundskeeper');
   grunt.loadNpmTasks('grunt-phpcs');
   grunt.loadNpmTasks('grunt-phpmd');
   grunt.loadNpmTasks('grunt-exec');
@@ -150,7 +164,7 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', []);
   grunt.registerTask('hint', ['jshint', 'phpcs', 'exec:phpcs_hint']);
-  grunt.registerTask('dump:prod', ['compass', 'uglify', 'cssmin']);
+  grunt.registerTask('dump:prod', ['compass', 'cssmin', 'uglify', 'groundskeeper']);
   grunt.registerTask('dump:dev', ['compass', 'concat']);
   grunt.registerTask('dump', ['dump:prod']);
 };
