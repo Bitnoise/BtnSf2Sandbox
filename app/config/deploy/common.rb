@@ -3,6 +3,7 @@
 set :repository,  "git@github.com:Bitnoise/BtnSf2Sandbox.git"
 set :scm,         :git
 set :use_composer, true
+set :update_assets_version, true
 
 set :model_manager, "doctrine"
 
@@ -76,7 +77,7 @@ before "deploy:share_childs", "upload_parameters"
 
 after "deploy:update", "deploy:cleanup"
 
-after "deploy:finalize_update", "upload_assets"
+after "deploy:finalize_update", "upload_assets", "symfony:cache:clear"
 
 #TODO - add mkdir uploads task:
 #mkdir -p uploads/avatar/user
