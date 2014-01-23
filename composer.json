@@ -27,6 +27,12 @@
         "elao/web-profiler-extra-bundle" : "dev-master",
         "knplabs/knp-paginator-bundle": "~2.3"
     },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "1.*",
+        "fabpot/php-cs-fixer": "0.3.*@dev",
+        "phpmd/phpmd" : "1.4.*",
+        "mockery/mockery": "dev-master@dev"
+    },
     "scripts": {
         "post-install-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
