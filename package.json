@@ -17,6 +17,7 @@
     "grunt-groundskeeper": "~0.1.6",
     "grunt-phpcs": "~0.2.0",
     "grunt-phpmd": "~0.1.0",
-    "grunt-exec": "~0.4.2"
+    "grunt-exec": "~0.4.2",
+    "grunt-assetic-dump": "~0.1.0"
   }
 }
