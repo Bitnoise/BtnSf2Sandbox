@@ -53,9 +53,9 @@
         "bin-dir": "bin"
     },
     "repositories": [
-        {
-            "type": "vcs",
-            "url":  "https://github.com/Bitnoise/BtnBaseBundle.git"
+{
+            "type": "composer",
+            "url": "http://bitnoise.github.io/packages/"
         }
     ],
     "minimum-stability": "stable",
