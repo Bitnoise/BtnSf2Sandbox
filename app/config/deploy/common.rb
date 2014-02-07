@@ -57,6 +57,7 @@ end
 task :upload_assets do
   desc "Upload assets to the stage"
   #dump locally
+  system("php app/console --no-ansi --no-interaction --env=prod assetic:dump")
   system("grunt dump")
 
   #send the files to the server
