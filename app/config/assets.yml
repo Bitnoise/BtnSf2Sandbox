@@ -6,7 +6,7 @@ assetic:
             output: css/screen.css
         base_js:
             inputs:
-                - vendor/jquery/jquery.min.js
+                - vendor/jquery/dist/jquery.min.js
                 - UI/app/js/app.js
             output:
                 'js/all.js'
