@@ -23,7 +23,7 @@
         "bitnoise/base-bundle": "dev-sf23",
         "knplabs/gaufrette": "0.2.*@dev",
         "knplabs/knp-gaufrette-bundle": "0.2.*@dev",
-        "liip/imagine-bundle": "dev-master",
+        "liip/imagine-bundle": "~0.21.1",
         "elao/web-profiler-extra-bundle" : "dev-master",
         "knplabs/knp-paginator-bundle": "~2.3"
     },
