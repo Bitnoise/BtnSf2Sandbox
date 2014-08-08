@@ -1,7 +1,7 @@
 imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
-    - { resource: liip_imagine.yml }
+    # - { resource: liip_imagine.yml }
     # - { resource: gaufrette.yml }
     # - { resource: assets.yml }
 
@@ -67,3 +67,13 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+# BtnAdmin Configuration
+btn_admin:
+    user_class: Btn\ControlBundle\Entity\User
+
+# FOSUser Configuration
+fos_user:
+    db_driver: orm
+    firewall_name: main
+    user_class: Btn\ControlBundle\Entity\User

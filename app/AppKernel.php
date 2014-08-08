@@ -16,10 +16,14 @@ class AppKernel extends Kernel
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
-            new Btn\AppBundle\BtnAppBundle(),
+            new FOS\UserBundle\FOSUserBundle(),
+            // new Liip\ImagineBundle\LiipImagineBundle(),
+            // new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
+            new Knp\Bundle\MenuBundle\KnpMenuBundle(),
+            new Btn\AdminBundle\BtnAdminBundle(),
             new Btn\ControlBundle\BtnControlBundle(),
-            new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
-            new Liip\ImagineBundle\LiipImagineBundle(),
+            new Btn\AppBundle\BtnAppBundle(),
             new Btn\BaseBundle\BtnBaseBundle(),
         );
 
