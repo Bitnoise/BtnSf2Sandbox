@@ -82,7 +82,7 @@ module.exports = function(grunt) {
                 banner: assetsBanner,
             },
             prod: {
-                configFile: 'app/config/assets.yml'
+                configFile: 'app/config/assetic.yml'
             }
         },
 
