@@ -2,8 +2,8 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     # - { resource: liip_imagine.yml }
-    # - { resource: gaufrette.yml }
-    # - { resource: assets.yml }
+    # - { resource: knp_gaufrette.yml }
+    # - { resource: assetic.yml }
 
 framework:
     #esi:             ~
