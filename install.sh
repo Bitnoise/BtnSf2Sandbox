@@ -1,6 +1,6 @@
 #!/bin/bash
 
 composer install
-./fixperms
+./fixperms.sh
 bower install
 npm install
