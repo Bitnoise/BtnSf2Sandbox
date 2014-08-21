@@ -33,3 +33,6 @@ cov/*
 # Capistrano
 backups/
 .cap_tasks~
+
+# IDE
+.idea
